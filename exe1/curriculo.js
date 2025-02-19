@@ -1,2 +1,2 @@
 
-    alert("Seja bem-vinda ao meu curriculo")
+    alert("Seja bem-vindo(a) ao meu curriculo")
