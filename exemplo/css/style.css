@@ -1,7 +1,38 @@
-body{
-    background-color:rgba(0, 147, 184, 0.356); color: brown;
+/*reset de página para eviar configurações do navegador*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    background-color: #ffffef;
 }
-.configura1{
-    text-align: center;
-    background-color:yellow; color:black;
+
+/*estilização do header*/
+header {
+    background-color: #004080;
+    color: #fff;
+    padding: 10px;
+}
+/*estilização do menu*/
+nav ul {
+    padding: 0;
+    background-color: #0066cc;
+    margin: 0;
+}
+nav ul li {
+    display: inline;
+    padding: 13px;
+}
+nav ul li a {
+    color: #7bcaff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.pacote {
+    display: inline-block;
+    width: 300px;
+    background-color:#fffce2;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,10);
 }
