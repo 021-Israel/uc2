@@ -4,12 +4,16 @@ body{
 	margin: 0%;
 	padding: 0%;
 }
+.titulo{
+    background-color: #003494;
+}
 
 header img{
-	border-radius: 30px; 
+	border-radius: 50px; 
 	transform: scale(0.5);
 	width:20%;
 	padding: 0%;
+
 }
 
 .slider{
@@ -36,13 +40,13 @@ display: none;
 }
 .manual-navigation{
 	position: absolute;
-	width: 796px;
+	width: 797px;
 	margin-top: -40px;
 	display: flex;
 	justify-content: center;
 }
 .manual-btn{
-	border:3px solid #ffffff;
+	border:3px solid #FFF;
 	padding: 5px;
 	border-radius: 19px;
 	cursor: pointer;
@@ -53,13 +57,13 @@ display: none;
 }
 
 .manual-btn:hover{
-	background-color: #fff;
+	background-color: #ffffff;
 }
 #radio1:checked ~ .first{
 	margin-left: 0;
 }
 #radio2:checked ~ .first{
-	margin-left: -24%;
+	margin-left: -25%;
 }
 #radio3:checked ~ .first{
 	margin-left: -62%;
@@ -111,32 +115,50 @@ display: none;
 	background-color: #FFF;
 }
 
-
-
-
-
-
-
-
-
 .menu{
 	display: inline-block;
 	text-align: center;
 }
+
 .menu img{
 	text-align: center;
 }
-nav ul {
-	padding: 0;
-	background-color: #000000;
-	margin: 0;
+
+.rodape{
+    text-align: center;
 }
-nav ul li {
-	display:list-item;
-	padding: 13px;
+
+.lista{
+    display: flex;
+    justify-content: center;
+    ul li{
+        list-style-type: none;
+        padding: 15px;
+        font-size: 30px;
+    }
+    a{
+        color: rgb(201, 192, 250);
+    }
 }
-nav ul li a {
-	color: #7bcaff;
-	text-decoration: none;
-	font-weight: bold;
+
+.lista .redes-sociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.sobre {
+    font-size: 13px;
+}
+footer{
+    background-color: #003494;
+    color: #FFF;
+}
+.dados{
+    font-size: 20px;
+}
+.acm-slide{
+    justify-content: center;
+    background-color: bisque;
 }
