@@ -8,37 +8,89 @@
 </head>
 <body>
     <header class="titulo">
-        <img src="image/logotipo1.jpg" alt="">
-
+        <img src="image/logotipo/logotipo1.jpg" alt="">
+        <h1>DESTAQUE</h1>
     </header>
+    <br><br>
+   <div class="slider">
+        <!--slide image-->
+        <div class="slides">
+            <!--Radio buttons-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <!--fim radio buttons-->
+                
+            <div class="slide first"> 
+                <img src="image/slides/camisa.jpg" alt="slide-camisa" />
+            </div>    
+            <div class="slide">
+                <img src="image/slides/calca.jpg" alt="slide-calça" />
+            </div>
+            <div class="slide">
+                <img src="image/slides/shorts.jpg" alt="slide-short" />
+            </div>
+            <div class="slide">    
+                <img src="image/slides/time.jpg" alt="slide-time" />
+            </div>
+            <div class="slide">    
+                <img src="image/slides/conjunto.png" alt="slide-conjunto" />
+            </div>
+            <!--fim slide imagem-->
+        
+            <!--navigation auto-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+            </div>
+        
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+        </div>
+        
+    </div>
+   <br><br><br><br><br><br><br><br>
     <main>
-     <section id="menu" class="abc">
+
+         <section id="menu" class="abc">
+            <br><br><br><br><br><br>
             <h3>Seu estilo é nossa paixão.</h3>
             <article class="menu">
-               <img src="image/camiseta.jpg" alt="Camiseta" width="300" height="300">
-                <h3>Camiseta</h3>
+               <img src="image/menu/time.jpg" alt="Camiseta-Time" width="300" height="300">
+                <h3>Times</h3>
             </article>
             <article class="menu">
-               <img src="image/camisa.jpg" alt="Camisa de manga" width="300" height="300">
+               <img src="image/menu/camisa.jpg" alt="Camisa de manga" width="300" height="300">
                 <h3>Camisa</h3>
             </article>
             <article class="menu">
-                <img src="image/casaco.jpg" alt="imagem de casacos" width="300" height="300">
+                <img src="image/menu/casaco.jpg" alt="imagem de casacos" width="300" height="300">
                 <h3>Casaco</h3>
             </article>
             <article class="menu">
-                <img src="image/shorts.jpg" alt="imagem de Shot" width="300" height="300">
+                <img src="image/menu/shorts.jpg" alt="imagem de Shot" width="300" height="300">
                 <h3>Short</h3>
             </article>
             <article class="menu">
-                <img src="image/calca.jpg" alt="Imagem de calça" width="300" height="300">
+                <img src="image/menu/calca.jpg" alt="Imagem de calça" width="300" height="300">
                 <h3>Calça</h3>
             </article>
             <hr>
         </section>
     </main>
     <footer class="rodape">
-        <!-- <!-- <p>&copy;  Dados adicionais -->
+     <p>&copy;  Dados adicionais
         <section class="sobre">
             <h2>Sobre nós</h2>
             <p>Fundada em 2022, A JWC Imports é uma empresa voltada para uma paixão brasileira que é seu estilo </p>
@@ -58,5 +110,6 @@
         </section>   
 
     </footer>
+    <script src="jwc.js"></script>
 </body>
 </html>
