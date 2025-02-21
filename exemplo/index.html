@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="icon" href="image/icon.jpg">
 
     <title>Jornada Viagens</title>
 </head>
@@ -17,7 +19,7 @@
     <ul type="circle"> <!--Circle, disc, square-->
         <li><a href="https://www.360meridianos.com/" target="_blank">Blog</a></li>
         <li><a href="#pacote" target="_blank">Pacotes<a></li>
-        <li><a href="#contato" target="_blank">Contatos </a></li>
+        <li><a href="#footer-contato">Contatos </a></li>
 
     </ul>
    </nav>
@@ -25,6 +27,109 @@
     <section id="Sobre-nos" class="configura1"> 
         <h2>sobre nós</h2>
         <p>Somo uma agencia apaixonada por criar viagens inesqueciveis...</p>
+    </section>
+    <section class="container" class="carousel" >
+            <article class="carousel">
+                <input type="radio" name="slides" checked="checked" id="slide-1">
+                <input type="radio" name="slides" id="slide-2">
+                <input type="radio" name="slides" id="slide-3">
+                <input type="radio" name="slides" id="slide-4">
+                <input type="radio" name="slides" id="slide-5">
+                <input type="radio" name="slides" id="slide-6">
+                <ul class="carousel__slides">
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1041/800/450" alt="Paisagem montanhosa coberta de neve com céu azul ao fundo">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Tim Marshall</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1043/800/450" alt="Paisagem montanhosa com céu azul e neve cobrindo o topo das montanhas">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Christian Joudrey</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1044/800/450" alt="Vista aérea de uma floresta densa com árvores em tons de verde e amarelo.">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Steve Carter</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1045/800/450" alt="Cachoeira fluindo entre rochas cercadas por vegetação verdejante">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1049/800/450" alt="Vista de uma praia com ondas quebrando na costa e céu azul ao fundo">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Rosan Harmens</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1052/800/450" alt="Cachoeira fluindo entre rochas cercadas por vegetação densa">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Annie Spratt</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>    
+                <ul class="carousel__thumbnails">
+                    <li>
+                        <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt="Paisagem montanhosa coberta de neve com céu azul ao fundo"></label>
+                    </li>
+                    <li>
+                        <label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt="Paisagem montanhosa com céu azul e neve cobrindo o topo das montanhas"></label>
+                    </li>
+                    <li>
+                        <label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt="Vista aérea de uma floresta densa com árvores em tons de verde e amarelo."></label>
+                    </li>
+                    <li>
+                        <label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt="Cachoeira fluindo entre rochas cercadas por vegetação verdejante"></label>
+                    </li>
+                    <li>
+                        <label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt="Vista de uma praia com ondas quebrando na costa e céu azul ao fundo"></label>
+                    </li>
+                    <li>
+                        <label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt="Cachoeira fluindo entre rochas cercadas por vegetação densa"></label>
+                    </li>
+                </ul>
+            </article>
+    </section>
+    <section id="midia">
+        <h2>Curta nova experiências</h2>
+        <video autoplay loop width="320" height="240" src="videos/205873_small.mp4" type="video/mp4" >Seu navegador não suporta a tag video</video>
+        <audio controls src="audios/travel-vlog-backsound-music-299546.mp3"></audio>
     </section>
     <section id="pacote" class="configura1">
         <h2>Ofertas da semana </h2>
@@ -53,16 +158,39 @@
             <p class="preco">R$ 2.200</p><br>
         </article>
     </section>
-    <section id="contato" class="configura1">
-        <h2>Contato</h2>
-        <p>Email: contato@jornada.com.br</p>
-        <p>Telefone: (21)99999-9999</p>
-    </section>
+
     </main>
-   <footer class="configura1"> <!--Rodapé da página--> 
-        <p>&copy;2025 jornada de viagens. Todos os direitos reservados. ✈🌍</p>
+    
+    <aside class="mapa">
+        <h3>Onde Estamos </h3>
+            <div class="mapa-conteudo"></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14701.764053689625!2d-42.48885588274039!3d-22.897098901174918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x975e037c5d0e05%3A0x4a7c4bae82c75bfa!2sBarreira%2C%20Saquarema%20-%20RJ%2C%2028990-000!5e0!3m2!1spt-BR!2sbr!4v1740159247151!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>"
+                <address>
+                    Rua Bacaxá, Barreira, 86 <br>
+                    Saquarema-RJ <br>
+                    CEP:28990-000
+                </address>
+            </div>
+    </aside>
+
+   <footer> <!--Rodapé da página--> 
+        <div id="footer-copy">
+           <p>&copy;2025 jornada de viagens. Todos os direitos reservados. ✈🌍</p>
+        </div>
+        <div id="footer-contato"id="contato"> 
+            <h2>Contato</h2>
+            <p>Email: contato@jornada.com.br</p>
+            <p>Telefone: (21)99999-9999</p>
+        </div>
+       <div class="footer-social">
+            <a href="https://www.instagram.com/" target="_blank"><img src="image/instagram.jpg" alt="logo_Instagram" width="30" ></a>
+            <a href="" target="_blank"><img src="image/facebook.jpg" alt="logo-Facebook"  width="30"></a>
+            <a href="" target="_blank"><img src="image/tiktok.jpg" alt="logo-Tik-tok"  width="30"></a>
+        </div>
    </footer>
     <!-- <script src="js/script.js"></script> -->
+
 </body>
 
 </html>

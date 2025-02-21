@@ -4,13 +4,13 @@ body {
     margin: 0;
     padding: 0;
     text-align:center;
-    background-color: #ffffef;
+    background-color: #FFF;
 }
 
 /*estilização do header*/
 header {
     background-color: #004080;
-    color: #fff;
+    color: #FFF;
     padding: 10px;
 }
 header img {
@@ -27,14 +27,14 @@ nav ul li {
     padding: 13px;
 }
 nav ul li a {
-    color: #7bcaff;
+    color: #FFF;
     text-decoration: none;
     font-weight: bold;
 }
 .pacote {
     display: inline-block;
     width: 300px;
-    background-color:#fffce2;
+    background-color:#FFF;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0,0,0,10);
@@ -50,8 +50,62 @@ nav ul li a {
     font-size: large;
 }
 footer {
-    background-color: #004080;
-    color: #fff;
+    background-color: #003a74;
+    color: #FFF;
     margin-top: 20px;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-social img{
+    padding: 15px;
+}
+#midia{
+    margin: 20px;
+    text-align: center;
+}
+#midia video, #midia audio{
+    display: block;
+    margin: 10px auto;
+}
+/* estilizando o mapa */
+.mapa {
+    display: flex;
+    flex-direction: column; /* Deixa o título no topo */
+    align-items: center;
+    padding: 20px;
+    background-color: #FFF;
+    text-align: center;
+}
+
+
+.mapa h3 {
+    margin-bottom: 10px;
+}
+
+
+/* Organiza o mapa e o endereço lado a lado */
+.mapa-conteudo {
+    display: flex;
+    flex-direction: row; /* Mantém os elementos na horizontal */
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre mapa e endereço */
+    width: 100%;
+}
+
+
+.mapa iframe {
+    width: 60%;
+    height: 200px;
+    border: none;
+}
+
+
+.mapa address {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    max-width: 35%; /* Define um tamanho máximo para não ficar muito largo */
 }
