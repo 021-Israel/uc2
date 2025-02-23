@@ -15,13 +15,17 @@ header{
 header img{
 	border-radius: 10%; 
 	transform: scale();
-	width: 8%;
-	padding: 0;
+	width: 8%; 
+	padding: 0%;
 	justify-content: space-between;
 	display: inline;
 
 }
-
+header .eqp{
+	display: flex;
+	text-align: initial;
+	
+}
 .slider{
 margin: 0 auto;
 width: 800px;
@@ -52,7 +56,7 @@ display: none;
 	justify-content: center;
 }
 .manual-btn{
-	border:3px solid #FFF;
+	border:4px solid #000000;
 	padding: 5px;
 	border-radius: 19px;
 	cursor: pointer;
@@ -82,9 +86,9 @@ display: none;
 }
 
 .navigation-auto div{
-	border: 3px solid #003494;
+	border:4px solid #000000;
 	padding: 5px;
-	border-radius: 20px;
+	border-radius: 19px;
 	cursor: pointer;
 	transition: 1s;
 }
@@ -98,27 +102,27 @@ display: none;
 }
 
 .navigation-auto div:not(:last-child){
-	margin-right:41px;
+	margin-right: 40px;
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1{
-	background-color: #FFF;
+	background-color: #160049;
 }
 
 #radio2:checked ~ .navigation-auto .auto-btn2{
-	background-color: #FFF;
+	background-color: #160049;
 }
 
 #radio3:checked ~ .navigation-auto .auto-btn3{
-	background-color: #FFF;
+	background-color: #160049;
 }
 
 #radio4:checked ~ .navigation-auto .auto-btn4{
-	background-color: #FFF;
+	background-color: #160049;
 }
 
 #radio5:checked ~ .navigation-auto .auto-btn5{
-	background-color: #FFF;
+	background-color: #160049;
 }
 
 .menu{
@@ -147,15 +151,14 @@ display: none;
     }
 }
 
-.lista .redes-sociais{
+.redes-sociais{
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
-    width: 100%;
-    height: auto;
+    width: 100%;	
 }
 .sobre {
-    font-size: 13px;
+    font-size: 15px;
 }
 footer{
     background-color: #003494;
