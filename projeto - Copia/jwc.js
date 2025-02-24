@@ -1,9 +1,7 @@
 let contador = 1;
 document.getElementById("radio1").checked = true;
 
-setInterval( function(){
-nextImage();
-}, 3500)
+
 
 
 function nextImage(){
