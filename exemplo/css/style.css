@@ -1,7 +1,7 @@
 /*reset de página para eviar configurações do navegador*/
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin-top: 222px;
     padding: 0;
     text-align:center;
     background-color: #FFF;
@@ -15,6 +15,7 @@ header {
 }
 header img {
     border-radius: 20px;
+
 }
 /*estilização do menu*/
 nav ul {
@@ -59,7 +60,9 @@ footer {
     align-items: center;
 }
 .footer-social img{
-    padding: 15px;
+    padding: 5px;
+    
+    
 }
 #midia{
     margin: 20px;
@@ -108,4 +111,23 @@ footer {
     color: #666;
     text-align: center;
     max-width: 35%; /* Define um tamanho máximo para não ficar muito largo */
+}
+
+/* Estilizando a tabela */
+
+.tabela-viagens {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabela-viagens th, .tabela-viagens td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabela-viagens th {
+    background-color: #00ff22;
+    color: rgb(255, 255, 255);
 }
