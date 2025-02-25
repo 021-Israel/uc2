@@ -161,35 +161,46 @@ display: none;
 }
 
 .rodape{
-    text-align: center;
+    display: inline-block;
+	
 	
 }
 
-/* .sobre {
-    font-size: 15px;
-} */
+
 footer{
     background-color: #000000;
     color: #FFF;
-	margin-top: auto;
-	position: relative;
-	display: block;
+	width: 100%;
+	justify-items: center;
+	
+	text-align: center;
+
 }
 .dados{
     font-size: 20px;
+	justify-self: center;
 }
+
+
+
 
 /*Página Sobre-Nós*/
 .about{
-	background-color: rgb(0, 0, 0);
-	color: #FFF;
+	display:inline-flex;
+	color: #000000;
 	text-align: center;
 	h1{
 		font-family: Arial, sans-serif;
 		font-size: 30px;
+		display: ;
+
 	}
 	p{
 		font-size: 25px;
+	}
+	img{
+		width: 900px;
+		height: 800px;
 	}
 }
 
