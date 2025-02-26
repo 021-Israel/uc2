@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="container">
+        <form name="teste" method="post" action="aula.js">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" name=Nome id="nome" class="form-control">
+
+            <label for="movel" class="form-label">Telefone</label><br>
+            <input type="tel" name="movel" id="movel" maxlength="11">
+
+            <p></p><label for="correio" class="form-label">Email</label>
+            <input type="email" name="correio" id="correio" class="form-control">
+
+            <label for="idade" class="form-label">Idade</label>
+            <input type="number" name="idade" id="idade" class="form-control">
+
+            <br><label for="raca" class="form-label">Raça</label >
+            <br><input type="color" name="raca" id="raca" ><p></p>
+
+            <br><label for="nascimento" 
+class="form-label">Data de Nascimento
+            </label >
+            <input type="date" name="nascimento" id="nascimento"><p></p>
+
+            <label for="sentimento" class="form-label">Selecione o nível de alegria</label ><br>
+            <input type="range" name="sentimento" id="sentimento" class="form-range">
+
+            <br><label for="site" class="form-label">Informe o site</label><br>
+            <input type="url" name="site" id="site"><br>
+
+           <br> <label for="curriculo" class="form-label">Envie seu curriculo</label><p></p>
+
+            <input type="file" name="curriculo" id="curriculo"><br>
+
+
+
+            <br><label for="genero" class="form-label">Qual é o seu gênero</label>
+            <input type="radio" name="genero" id="genero" value="Feminino">Feminino 
+            <input type="radio" name="genero" id="genero" value="Masculino">Masculino <br>
+            
+           <br> <label for="senha" class="form-label">Digite uma senha</label>
+            <input type="password" name="senha" id="senha" class="form-control"><br>
+
+            <input type="button" class="btn btn-outline-secondary" value="Confirma">
+            <input type="reset" class="btn btn-outline-danger" value="limpar">
+            <input type="submit" class="btn btn-outline-success" value="Enviar"><br>
+            <br><label for="confirma" class="form-label">Aceite os termos de uso</label>
+            <input type="checkbox" name="confirma" id="confirma" class="form-check-input"><br>
+            <!-- <input type="datetime-local"> Insere a data e a hora -->
+            <!-- <input type="hidden">  campo oculto-->
+            <!-- <input type="image"> para imagem -->
+            <!-- <input type="month"> Insere o mês-->
+            
+            
+            
+            
+
+                        <!-- <input type="search" class="btn btn-outline-secondary" value="Confirma">> -->
+
+            <!-- <input type="time"> Insere a hora-->
+            
+            <!-- <input type="week">Insere a semana -->
+        </form>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
