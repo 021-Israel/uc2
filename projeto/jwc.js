@@ -26,3 +26,11 @@ function exibirDados() {
     //Usando document.write para exibir os dados da página
     document.write('<p><strong>E-mail:</strong> '+email + '</p>')
 }
+
+
+
+document.getElementById("cadastroForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Impede o envio padrão do formulário
+    alert("E-mail cadastrado!");
+    window.location.href = "index.html"; // Redireciona para a home
+});
