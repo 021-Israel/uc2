@@ -18,7 +18,7 @@ header img {
 
 }
 /*estilização do menu*/
-nav ul {
+/* nav ul {
     padding: 0;
     background-color: #0066cc;
     margin: 0;
@@ -31,6 +31,9 @@ nav ul li a {
     color: #FFF;
     text-decoration: none;
     font-weight: bold;
+} */
+.nav-link{
+    color: black;
 }
 .pacote {
     display: inline-block;

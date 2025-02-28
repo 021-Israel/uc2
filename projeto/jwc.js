@@ -31,6 +31,13 @@ function exibirDados() {
 
 document.getElementById("cadastroForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Impede o envio padrão do formulário
-    alert("E-mail cadastrado!");
-    window.location.href = "index.html"; // Redireciona para a home
+    Swal.fire({
+        title: "Cadastro realizado com sucesso!",
+        icon: "success",
+        confirmButtonText: "OK"
+    }).then(() => {
+        window.location.href = "index.html";
+    });
 });
+
+

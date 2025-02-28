@@ -35,11 +35,12 @@ header{
 		color: red;
 	}
 }
-
+/*"destaque" acima do slide*/
 .acm-slide{
 	text-align: center;
 	color: #000000;
 }
+/* slide */
 .slider{
 margin: 0 auto;
 width: 800px;
@@ -141,6 +142,7 @@ display: none;
 	background-color: red;
 }
 
+/*Menu com fotos*/
 .menu{
 	display: inline-block;
 	box-shadow: 2px 2px 10px rgba(0,0,0,10);
@@ -170,56 +172,10 @@ display: none;
 
 }
 
+/*inicio rodapé*/
 
-
-/* footer{
-    display: inline-block;
-	background-color: #003494;
-    color: #FFF;
-	width: 100%;
-
-	
-	
-	.pesquisa{
-		color: white;
-		text-align: center;
-		
-	}
-	
-	.termo h2{
-		color: #FFF;
-	}
-	
-	.contat h2{
-		color: #FFF;
-	}
-	.cadastro{
-		display: flex;
-		justify-self: center;
-		/* outline: unset; */
-		/* padding: 30px;
-		width: 300px; */
-		
-		
-	}/*
-
-}/*
-footer .termo h2 a{
-	color: #ffffff;
-	font-size: 20px;
-	
-}
-footer .contat{
-	font-size: 20px;
-	justify-self: right;
-}
-
-.dados{
-    font-size: 20px;
-	justify-self: left;
-} */
 .rodape {
-    background-color: #1800ec;
+    background-color: #003494;
     color: #fff;
     padding: 40px 20px;
     text-align: center;
@@ -270,7 +226,7 @@ footer .contat{
 .btn.btn-outline-success {
     background-color: #fc2307;
     color: white;
-    border: 2px solid #00c853;
+    border: 2px solid red;
     transition: 0.3s;
 }
 
@@ -290,18 +246,13 @@ footer .contat{
 }
 
 .termo a {
-    color: #00c853;
-    text-decoration: none;
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 .termo a:hover {
     text-decoration: underline;
 }
-
-
-
-
-
 
 
 
