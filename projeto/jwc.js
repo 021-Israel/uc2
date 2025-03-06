@@ -41,3 +41,21 @@ document.getElementById("cadastroForm").addEventListener("submit", function(even
 });
 
 
+// Controle de múltiplos carrosséis
+let currentIndex = [0, 0, 0, 0, 0, 0, 0];  // Índices para controlar vários carrosséis
+
+function moveSlide(step, carouselIndex) {
+  const slides = document.querySelectorAll(`.carousel-container:nth-child(${carouselIndex + 1}) .carousel-item`);
+  const totalSlides = slides.length;
+
+  currentIndex[carouselIndex] += step;
+
+  if (currentIndex[carouselIndex] < 0) {
+    currentIndex[carouselIndex] = totalSlides - 1;
+  } else if (currentIndex[carouselIndex] >= totalSlides) {
+    currentIndex[carouselIndex] = 0;
+  }
+
+  const newTransformValue = -currentIndex[carouselIndex] * 100;
+  document.querySelector(`.carousel-container:nth-child(${carouselIndex + 1}) .carousel`).style.transform = `translateX(${newTransformValue}%)`;
+}
