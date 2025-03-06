@@ -27,15 +27,18 @@ header{
 	}
 	a{
 		text-decoration: none;
-		color: #ee0000;
-		padding: 0 20px;
+		color: #ffffff;
+		padding: 0 40px;
 	}
 	a:nth-last-child(1){
 		padding-right: 0;
 	}
 	.links{
 		display: flex;
-		color: red;
+		color: #ad3a3a;
+	}
+	i{
+		font-size: 28px;
 	}
 
 }
@@ -45,7 +48,7 @@ header{
 .hero{
 	margin-top: 0px;
 	padding: 8rem 5%;
-	background: linear-gradient(45deg, rgb(255, 1, 1), #2400c4);
+	background: linear-gradient(45deg, rgb(18, 20, 43), #003494);
 	text-align: center;
 	clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 	h1{
@@ -71,7 +74,7 @@ header{
 
 .links a:hover {
     transform: rotate(360deg); /* Rotaciona o ícone ao passar o mouse */
-    color: #ffcc00;
+    color: black;
 }
 
 /*"destaque" acima do slide*/
@@ -185,7 +188,7 @@ display: none;
 /*Menu com fotos*/
 .menu{
 	display: inline-block;
-	box-shadow: 10px 15px 10px rgb(43, 43, 255);
+	box-shadow: 10px 15px 10px rgba(0, 0, 197, 0.288);
 	border-radius: 50px ;
 	color: #2fe601;
 	
@@ -392,10 +395,26 @@ ol {
 
 /*camisas de time*/ 
 .category {
-	display: list-item;
+	display: flex;
+	flex-wrap: wrap;
 	text-align: center;
 	align-items: center;
 	margin: 30px;
+	box-shadow: 10px 15px 10px rgba(0, 0, 253, 0.445);
+	border-radius: 50px ;
+	img{
+		border-radius: 25px;
+	}
+
+  }
+  .category h2{
+	width: 100%;
+	color: #1b3292;
+	font-size: 36px;
+  }
+
+  .carousel-container h4{
+	z-index: 99;
   }
   
   /* Estilo dos carrosséis */
@@ -404,7 +423,8 @@ ol {
 	max-width: 300px;
 	margin: 20px auto;
 	overflow: hidden;
-  }
+  
+	}
   
   .carousel {
 	display: flex;
