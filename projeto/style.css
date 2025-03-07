@@ -14,7 +14,7 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	padding: 40px 40px;
-	background: linear-gradient(45deg, #0c1e45, #0d1033);
+	background: linear-gradient(147deg, #0c1e45, #0d1033);
 	img{
 		width: 120px;
 		height: 120px;
@@ -74,7 +74,7 @@ header{
 
 .links a:hover {
     transform: rotate(360deg); /* Rotaciona o ícone ao passar o mouse */
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 /*"destaque" acima do slide*/
