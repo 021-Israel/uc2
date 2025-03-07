@@ -14,7 +14,7 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	padding: 40px 40px;
-	background-color: #003494;
+	background: linear-gradient(45deg, #0c1e45, #0d1033);
 	img{
 		width: 120px;
 		height: 120px;
@@ -47,8 +47,8 @@ header{
 /*hero*/
 .hero{
 	margin-top: 0px;
-	padding: 8rem 5%;
-	background: linear-gradient(45deg, rgb(18, 20, 43), #003494);
+	padding: 4rem 5%;
+	background: linear-gradient(45deg, #0c1e45, #0d1033);
 	text-align: center;
 	clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 	h1{
