@@ -36,26 +36,45 @@ document.getElementById("cadastroForm").addEventListener("submit", function(even
         icon: "success",
         confirmButtonText: "OK"
     }).then(() => {
-        window.location.href = "index.html";
+        window.location.href = "index.html#dados";
     });
 });
 
+// Função para mover os slides
+function moveSlide(direction, carouselIndex) {
+    var carousel = document.querySelectorAll('.carousel')[carouselIndex - 1]; // Seleciona o carrossel correto
+    var items = carousel.querySelectorAll('.carousel-item'); // Pega todos os itens do carrossel
+    var totalItems = items.length; // Total de itens no carrossel
+    var currentIndex = Array.from(items).findIndex(item => item.style.display === 'block'); // Índice do item atual
 
-// Controle de múltiplos carrosséis
-let currentIndex = [0, 0, 0, 0, 0, 0, 0];  // Índices para controlar vários carrosséis
+    // Se não há item visível, começamos do primeiro
+    if (currentIndex === -1) currentIndex = 0;
 
-function moveSlide(step, carouselIndex) {
-  const slides = document.querySelectorAll(`.carousel-container:nth-child(${carouselIndex + 1}) .carousel-item`);
-  const totalSlides = slides.length;
+    // Remover a visibilidade do item atual
+    items[currentIndex].style.display = 'none';
 
-  currentIndex[carouselIndex] += step;
+    // Calcular o novo índice com base na direção
+    var newIndex = currentIndex + direction;
 
-  if (currentIndex[carouselIndex] < 0) {
-    currentIndex[carouselIndex] = totalSlides - 1;
-  } else if (currentIndex[carouselIndex] >= totalSlides) {
-    currentIndex[carouselIndex] = 0;
-  }
+    // Lógica para rotação circular
+    if (newIndex < 0) {
+        newIndex = totalItems - 1; // Vai para o último item se a direção for negativa
+    } else if (newIndex >= totalItems) {
+        newIndex = 0; // Vai para o primeiro item se a direção for positiva
+    }
 
-  const newTransformValue = -currentIndex[carouselIndex] * 100;
-  document.querySelector(`.carousel-container:nth-child(${carouselIndex + 1}) .carousel`).style.transform = `translateX(${newTransformValue}%)`;
+    // Mostrar o novo item
+    items[newIndex].style.display = 'block';
 }
+
+// Inicializar todos os carrosséis com o primeiro item visível
+document.addEventListener("DOMContentLoaded", function () {
+    var carousels = document.querySelectorAll('.carousel');
+    carousels.forEach(function (carousel) {
+        var items = carousel.querySelectorAll('.carousel-item');
+        items.forEach(function (item, index) {
+            if (index !== 0) item.style.display = 'none'; // Esconde todos os itens, exceto o primeiro
+        });
+    });
+});
+

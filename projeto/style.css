@@ -399,9 +399,9 @@ ol {
 	flex-wrap: wrap;
 	text-align: center;
 	align-items: center;
-	margin: 30px;
-	box-shadow: 10px 15px 10px rgba(0, 0, 253, 0.445);
-	border-radius: 50px ;
+	gap: 0px;
+	padding: 0px;
+	margin: 20px;
 	img{
 		border-radius: 25px;
 	}
@@ -415,14 +415,26 @@ ol {
 
   .carousel-container h4{
 	z-index: 99;
+	color: white;
+
   }
   
+
+.carousel-container h3{
+	color: red;
+}
+
   /* Estilo dos carrosséis */
   .carousel-container {
 	position: relative;
 	max-width: 300px;
 	margin: 20px auto;
 	overflow: hidden;
+	background-color: #003494;
+	box-shadow: 10px 15px 10px rgba(0, 0, 197, 0.288);
+	border-radius: 25px ;
+	font-size: 20px;
+
   
 	}
   
@@ -438,7 +450,8 @@ ol {
   .carousel-item img {
 	width: 100%;
 	display: list-item;
-	height: auto;
+	height: 350px;
+
   }
   
   /* Estilo dos botões de navegação */
