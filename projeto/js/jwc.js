@@ -40,6 +40,8 @@ document.getElementById("cadastroForm").addEventListener("submit", function(even
     });
 });
 
+
+
 // Função para mover os slides
 function moveSlide(direction, carouselIndex) {
     var carousel = document.querySelectorAll('.carousel')[carouselIndex - 1]; // Seleciona o carrossel correto
